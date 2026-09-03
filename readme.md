@@ -1,4 +1,4 @@
-# Virtual OS (v0.3.2)
+# Virtual OS (v0.3.3)
 
 A Virtual OS egy billentyűzet-orientált virtuális operációsrendszer asztali környezet, Python és **wxPython** alapon.
 

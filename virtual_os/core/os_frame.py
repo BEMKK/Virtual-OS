@@ -17,7 +17,7 @@ from virtual_os.apps.explorer import ExplorerApp
 class VirtualOSFrame(wx.Frame):
     """Main desktop shell window for Virtual OS."""
     def __init__(self):
-        super().__init__(None, title="Virtual OS for Blinds (v0.3.2)", size=(1024, 768))
+        super().__init__(None, title="Virtual OS for Blinds (v0.3.3)", size=(1024, 768))
         self.CentreOnScreen()
         
         self.main_panel = wx.Panel(self, style=wx.TAB_TRAVERSAL)

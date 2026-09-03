@@ -24,9 +24,9 @@ class TaskbarPanel(wx.Panel):
         # 2. Kitűzött alkalmazások sizer-e (ez kerül a Start gomb mögé)
         self.pinned_sizer = wx.BoxSizer(wx.HORIZONTAL)
         
-        btn_pinned_notepad = wx.Button(self, label="[N]", style=wx.BU_EXACTFIT)
+        btn_pinned_notepad = wx.Button(self, label="[Jegyzettömb]", style=wx.BU_EXACTFIT)
         btn_pinned_notepad.SetToolTip("Jegyzettömb indítása")
-        btn_pinned_notepad.Bind(wx.EVT_BUTTON, lambda e: self.parent_frame.open_app("Jegyzettömb"))
+        btn_pinned_notepad.Bind(wx.EVT_BUTTON, lambda e: wx.GetTopLevelParent(self).open_app("Jegyzettömb"))
         btn_pinned_notepad.Bind(wx.EVT_CONTEXT_MENU, self.on_pinned_context_menu)
         self.pinned_sizer.Add(btn_pinned_notepad, 0, wx.ALL | wx.ALIGN_CENTER_VERTICAL, 2)
         
